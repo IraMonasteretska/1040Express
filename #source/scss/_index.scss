@@ -312,6 +312,20 @@
         background-size: cover;
     }
 
+    .line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .circle {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+
 }
 
 
@@ -823,36 +837,9 @@
 
 
 
-
-// .bigline {
-//     animation: lineFade 2s ease-in-out forwards;
-//     opacity: 0;
-//     transform: translate(-5%, 5%) rotate(-1deg);
-// }
-
-// .bigCircle {
-//     animation: circleFade 2s 0.5s ease-in-out forwards;
-//     opacity: 0;
-//     transform: translate(10%, 15%);
-// }
-
-// @keyframes lineFade {
-//     to {
-//         transform: translate(0%, 0%) rotate(0deg);
-//         opacity: 1;
-//     }
-// }
-
-// @keyframes circleFade {
-//     to {
-//         transform: translate(0%, 0%);
-//         opacity: 1;
-//     }
-// }
-
 [data-aos="cfl-anim"] {
     opacity: 0;
-    transform: translate(-5%, 5%) rotate(-1deg);
+    transform: translate(0%, 6%) rotate(-1deg);
 
     &.aos-animate {
         transform: translate(0%, 0%) rotate(0deg);
@@ -862,10 +849,8 @@
 
 [data-aos="circle-anim"] {
     opacity: 0;
-    transform: translate(10%, 15%);
 
     &.aos-animate {
-        transform: translate(0%, 0%);
         opacity: 1;
     }
 }
