@@ -114,6 +114,22 @@
     z-index: -1;
     top: 100px;
     left: -20%;
+    animation: blick 7s ease-in-out infinite;
+}
+
+@keyframes blick {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 0.8;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .services__inner {
