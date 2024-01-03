@@ -73,6 +73,16 @@ $(document).ready(function () {
     }, 500);
 
 
+    // input mask
+    if ($('.phoneinp').length) {
+        $('.phoneinp').inputmask({
+            mask: "999 999 9999",
+            placeholder: "_",
+            showMaskOnFocus: true,
+            showMaskOnHover: true,
+        });
+    }
+
 });
 
 AOS.init({
