@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1040 Express</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/lib/aos.css">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -71,17 +72,50 @@
                     </div>
                 </div>
             </div>
-        </header> 
+        </header>
 
         <main class="main">
 
             <section class="heroscreen" id="home">
                 <img src="img/img_hero.jpg" alt="image" class="heroscreen__bg">
 
-                <picture class="heroscreen__frame">
+                <div class="heroscreen__frame">
+                    <img src="img/svg/heroscreen_frame-mobile.svg" alt="frame">
+
+                    <svg viewBox="0 0 1600 395" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_54_228)">
+                            <path data-aos="hfl-anim" data-aos-duration="1500" opacity="0.6"
+                                d="M1032.5 62.9997C1487 -94 1600 93 1600 85.4998V103C1413 17.1601 1255 67.4996 1049.5 186C532.437 484.16 81.5 380 0 364.5V103C204.5 284.5 661.9 191.018 1032.5 62.9997Z"
+                                fill="url(#paint0_linear_54_228)" />
+                            <path data-aos="hcircle-anim" data-aos-delay="300" data-aos-duration="1500" opacity="0.6"
+                                d="M1098 349.5C1243.2 84.3 1493.17 103.667 1600 146.5V349.5H1098Z"
+                                fill="url(#paint1_linear_54_228)" />
+                            <path d="M649 349.5L1600 349V396H0V363C297 426 539.5 377 649 349.5Z" fill="white" />
+                        </g>
+                        <defs>
+                            <linearGradient id="paint0_linear_54_228" x1="800" y1="103.464" x2="800" y2="348.014"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#426932" />
+                                <stop offset="1" stop-color="#7EB338" />
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_54_228" x1="1349" y1="180.991" x2="1349" y2="322.515"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#426932" />
+                                <stop offset="1" stop-color="#7EB338" />
+                            </linearGradient>
+                            <clipPath id="clip0_54_228">
+                                <rect width="1600" height="395" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                </div>
+
+                <!-- <picture class="heroscreen__frame">
                     <source srcset="img/svg/heroscreen_frame-mobile.svg" media="(max-width:576px)">
                     <img src="img/svg/heroscreen_frame.svg" alt="img" >
-                </picture>
+                </picture> -->
                 <picture class="white-space">
                     <source srcset="img/frame_white_row_mobile.png" media="(max-width:576px)">
                     <img src="img/frame_white_row.png" alt="img">
@@ -109,7 +143,7 @@
             <section class="services" id="services">
                 <div class="container">
                     <div class="services__inner">
-                        <div class="services__left">
+                        <div class="services__left" data-aos="fade-right" data-aos-duration="900">
                             <img src="img/svg/frame.svg" alt="frame" class="services-frame">
                             <div class="services__title">
                                 <h2>
@@ -126,7 +160,7 @@
                                 <a href="#contact" class="greenbtn scrollto">Contact us</a>
                             </div>
                         </div>
-                        <div class="services__right">
+                        <div class="services__right" data-aos="fade-left" data-aos-delay="300" data-aos-duration="900">
                             <div class="services__accordeon">
                                 <div class="accordeon-row">
                                     <div class="accordeon-head">
@@ -188,10 +222,47 @@
                 <div class="container">
                     <div class="contact__inner">
                         <div class="contact__info">
-                            <picture class="contact__info-frame">
-                                <source srcset="img/frame_contact_mobile.png" media="(max-width:576px)">
-                                <img src="img/frame_contact.png" alt="frame">
-                            </picture>
+                            <div class="contact__info-frame">
+                                <img src="img/frame_contact_mobile.png" alt="frame">
+                                <svg viewBox="0 0 814 226" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_54_242)">
+                                        <path data-aos="cfl-anim" data-aos-delay="500" data-aos-duration="1400"
+                                            d="M563.358 34.2842C811.344 -51.2806 873 50.6344 873 46.5469L873 56.0843C770.968 9.30169 684.759 36.7367 572.633 101.319C290.511 263.817 34.4684 207.049 -10 198.602L-10 56.0842C101.58 155.002 361.149 104.054 563.358 34.2842Z"
+                                            fill="url(#paint0_linear_54_242)" />
+                                    </g>
+                                    <g clip-path="url(#clip1_54_242)">
+                                        <path data-aos="circle-anim" data-aos-delay="700" data-aos-duration="1400"
+                                            d="M566 175C637.732 43.7724 761.222 53.3555 814 74.5505V175H566Z"
+                                            fill="url(#paint1_linear_54_242)" stroke="url(#paint2_linear_54_242)" />
+                                    </g>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_54_242" x1="431.5" y1="56.3371" x2="431.5"
+                                            y2="189.617" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#426932" />
+                                            <stop offset="1" stop-color="#7EB338" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_54_242" x1="690" y1="91.6175" x2="690"
+                                            y2="161.647" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#426932" />
+                                            <stop offset="1" stop-color="#7EB338" />
+                                        </linearGradient>
+                                        <linearGradient id="paint2_linear_54_242" x1="690" y1="91.6175" x2="690"
+                                            y2="161.647" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#426932" />
+                                            <stop offset="1" stop-color="#7EB338" />
+                                        </linearGradient>
+                                        <clipPath id="clip0_54_242">
+                                            <rect width="814" height="226" fill="white"
+                                                transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 814 6.10352e-05)" />
+                                        </clipPath>
+                                        <clipPath id="clip1_54_242">
+                                            <rect width="248" height="101" fill="white"
+                                                transform="translate(566 62.0001)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </div>
                             <div class="contact__info-title">
                                 <h2>
                                     Contact info<span>.</span>
@@ -358,13 +429,13 @@
                         <ul class="footer__contact">
                             <li>
                                 <span>
-                                    Corporation Dept: 
+                                    Corporation Dept:
                                 </span>
                                 <a href="mailto:CORP@1040EXPRESS.NET">CORP@1040EXPRESS.NET</a>
                             </li>
                             <li>
                                 <span>
-                                    Individual Dept: 
+                                    Individual Dept:
                                 </span>
                                 <a href="mailto:MAIL@1040EXPRESS.NET">MAIL@1040EXPRESS.NET</a>
                             </li>
@@ -387,6 +458,7 @@
 
 
     <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/aos.js"></script>
     <script src="js/main.js"></script>
 
 

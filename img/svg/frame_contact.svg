@@ -1,0 +1,58 @@
+<svg width="814" height="226" viewBox="0 0 814 226" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_54_242)">
+<path class="bigline" d="M563.358 34.2842C811.344 -51.2806 873 50.6344 873 46.5469L873 56.0843C770.968 9.30169 684.759 36.7367 572.633 101.319C290.511 263.817 34.4684 207.049 -10 198.602L-10 56.0842C101.58 155.002 361.149 104.054 563.358 34.2842Z" fill="url(#paint0_linear_54_242)"/>
+</g>
+<g clip-path="url(#clip1_54_242)">
+<path class="bigCircle" d="M566 175C637.732 43.7724 761.222 53.3555 814 74.5505V175H566Z" fill="url(#paint1_linear_54_242)" stroke="url(#paint2_linear_54_242)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_54_242" x1="431.5" y1="56.3371" x2="431.5" y2="189.617" gradientUnits="userSpaceOnUse">
+<stop stop-color="#426932"/>
+<stop offset="1" stop-color="#7EB338"/>
+</linearGradient>
+<linearGradient id="paint1_linear_54_242" x1="690" y1="91.6175" x2="690" y2="161.647" gradientUnits="userSpaceOnUse">
+<stop stop-color="#426932"/>
+<stop offset="1" stop-color="#7EB338"/>
+</linearGradient>
+<linearGradient id="paint2_linear_54_242" x1="690" y1="91.6175" x2="690" y2="161.647" gradientUnits="userSpaceOnUse">
+<stop stop-color="#426932"/>
+<stop offset="1" stop-color="#7EB338"/>
+</linearGradient>
+<clipPath id="clip0_54_242">
+<rect width="814" height="226" fill="white" transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 814 6.10352e-05)"/>
+</clipPath>
+<clipPath id="clip1_54_242">
+<rect width="248" height="101" fill="white" transform="translate(566 62.0001)"/>
+</clipPath>
+
+<style>
+
+.bigline{
+    animation: lineFade 2s ease-in-out forwards;
+    opacity: 0;
+    transform: translate(-5%, 5%) rotate(-1deg);
+}
+
+.bigCircle{
+    animation: circleFade 2s 0.5s ease-in-out forwards;
+    opacity: 0;
+    transform: translate(10%, 15%);
+}
+@keyframes lineFade {
+    to{
+        transform: translate(0%, 0%) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes circleFade {
+    to{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+}
+
+</style>
+
+</defs>
+</svg>

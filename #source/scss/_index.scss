@@ -48,9 +48,13 @@
     bottom: 0;
     width: 100%;
 
-    img,
-    source {
-        display: block;
+    img {
+        display: none;
+        width: 100%;
+        background-size: cover;
+    }
+
+    svg {
         width: 100%;
         background-size: cover;
     }
@@ -122,10 +126,12 @@
         opacity: 1;
         transform: scale(1);
     }
-    50%{
+
+    50% {
         opacity: 0.8;
         transform: scale(1.2);
     }
+
     100% {
         opacity: 1;
         transform: scale(1);
@@ -289,7 +295,7 @@
 
 .contact__info-frame {
     position: absolute;
-    bottom: -3.7vw;
+    bottom: -3.9vw;
     width: 50%;
     background-size: cover;
     width: 50vw;
@@ -297,10 +303,17 @@
 
     img {
         width: 100%;
-        display: block;
+        display: none;
         background-size: cover;
     }
+
+    svg {
+        width: 100%;
+        background-size: cover;
+    }
+
 }
+
 
 .contact__inner {
     display: flex;
@@ -585,7 +598,7 @@
 
     .contact__info-frame {
         position: absolute;
-        bottom: -8.1vw;
+        bottom: -8.5vw;
         width: 50%;
         background-size: cover;
         width: 110vw;
@@ -634,7 +647,7 @@
     .contact__info-frame {
         right: -17vw;
         width: 120vw;
-        bottom: -8.8vw;
+        bottom: -9.2vw;
     }
 
     .accordeon-body ul li {
@@ -716,6 +729,14 @@
         right: -6vw;
         bottom: -14.8vw;
         width: 105vw;
+
+        svg {
+            display: none;
+        }
+
+        img {
+            display: block;
+        }
     }
 
     .contact__form {
@@ -781,6 +802,17 @@
         height: calc(100vh - 55px);
         margin-top: 55px;
     }
+
+    .heroscreen__frame {
+
+        img {
+            display: block;
+        }
+
+        svg {
+            display: none;
+        }
+    }
 }
 
 @media (max-width:400px) {
@@ -792,28 +824,68 @@
 
 
 
-
-// .bigline{
+// .bigline {
 //     animation: lineFade 2s ease-in-out forwards;
 //     opacity: 0;
 //     transform: translate(-5%, 5%) rotate(-1deg);
 // }
 
-// .bigCircle{
+// .bigCircle {
 //     animation: circleFade 2s 0.5s ease-in-out forwards;
 //     opacity: 0;
 //     transform: translate(10%, 15%);
 // }
+
 // @keyframes lineFade {
-//     to{
+//     to {
 //         transform: translate(0%, 0%) rotate(0deg);
-//         opacity: 0.6;
+//         opacity: 1;
 //     }
 // }
 
 // @keyframes circleFade {
-//     to{
+//     to {
 //         transform: translate(0%, 0%);
-//         opacity: 0.6;
+//         opacity: 1;
 //     }
 // }
+
+[data-aos="cfl-anim"] {
+    opacity: 0;
+    transform: translate(-5%, 5%) rotate(-1deg);
+
+    &.aos-animate {
+        transform: translate(0%, 0%) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+[data-aos="circle-anim"] {
+    opacity: 0;
+    transform: translate(10%, 15%);
+
+    &.aos-animate {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+}
+
+[data-aos="hfl-anim"] {
+    opacity: 0;
+    transform: translate(-5%, 5%) rotate(-1deg);
+
+    &.aos-animate {
+        transform: translate(0%, 0%) rotate(0deg);
+        opacity: 0.6;
+    }
+}
+
+[data-aos="hcircle-anim"] {
+    opacity: 0;
+    transform: translate(10%, 15%);
+
+    &.aos-animate {
+        transform: translate(0%, 0%);
+        opacity: 0.6;
+    }
+}

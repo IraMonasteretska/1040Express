@@ -74,3 +74,10 @@ $(document).ready(function () {
 
 
 });
+
+AOS.init({
+    duration: 800,
+    disable: 'mobile',
+    once: true,
+    easing: 'ease-in-out'
+});
