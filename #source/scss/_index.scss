@@ -772,3 +772,32 @@
         bottom: 11px;
     }
 }
+
+
+
+
+
+// .bigline{
+//     animation: lineFade 2s ease-in-out forwards;
+//     opacity: 0;
+//     transform: translate(-5%, 5%) rotate(-1deg);
+// }
+
+// .bigCircle{
+//     animation: circleFade 2s 0.5s ease-in-out forwards;
+//     opacity: 0;
+//     transform: translate(10%, 15%);
+// }
+// @keyframes lineFade {
+//     to{
+//         transform: translate(0%, 0%) rotate(0deg);
+//         opacity: 0.6;
+//     }
+// }
+
+// @keyframes circleFade {
+//     to{
+//         transform: translate(0%, 0%);
+//         opacity: 0.6;
+//     }
+// }

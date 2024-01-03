@@ -34,4 +34,43 @@ $(document).ready(function () {
             top = $(id).offset().top;
         $('body,html').animate({ scrollTop: top - 100 }, 0);
     });
+
+
+    //  --- animated text --- //
+    function animateTextIn(text, index) {
+        if (index < text.length) {
+            $("#animatedText").append(text[index]);
+            setTimeout(function () {
+                animateTextIn(text, index + 1);
+            }, 120);
+        } else {
+
+            setTimeout(function () {
+                animateTextOut(text, text.length - 1);
+            }, 1000);
+        }
+    }
+
+    function animateTextOut(text, index) {
+        if (index >= 0) {
+            var newText = text.substring(0, index);
+            $("#animatedText").text(newText);
+            setTimeout(function () {
+                animateTextOut(text, index - 1);
+            }, 120);
+        } else {
+
+            setTimeout(function () {
+                animateTextIn(text, 0);
+            }, 700);
+        }
+    }
+
+
+    var originalText = $("#animatedText").data('text');
+    setTimeout(function () {
+        animateTextIn(originalText, 0);
+    }, 500);
+
+
 });
