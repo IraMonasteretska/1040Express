@@ -83,6 +83,18 @@ $(document).ready(function () {
         });
     }
 
+    // inputfile
+    $('#fileInput').change(function() {
+        var fileInput = $(this);
+        var fileTooltip = $('.file-tooltip');
+
+        if (fileInput[0].files.length > 0) {
+          fileTooltip.text('File selected');
+        } else {
+          fileTooltip.text('File not selected');
+        }
+      });
+
 });
 
 AOS.init({
