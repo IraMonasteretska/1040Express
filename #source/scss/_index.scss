@@ -674,7 +674,7 @@
             height: 20px;
             background-size: cover;
             cursor: pointer;
-            background-image: url(/img/svg/plus.svg);
+            background-image: url(../img/svg/plus.svg);
         }
         .minus{
             margin-left: 15px;
@@ -683,7 +683,7 @@
             height: 20px;
             background-size: cover;
             cursor: pointer;
-            background-image: url(/img/svg/minus.svg);
+            background-image: url(../img/svg/minus.svg);
         }
         &.additional{
             .plus{
