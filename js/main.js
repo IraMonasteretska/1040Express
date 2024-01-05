@@ -83,17 +83,44 @@ $(document).ready(function () {
         });
     }
 
-    // inputfile
-    $('#fileInput').change(function() {
+    // inputfile tooltip -------------------- //
+    $(document).on('change', '.file-input', function () {
         var fileInput = $(this);
-        var fileTooltip = $('.file-tooltip');
-
+        var fileTooltip = fileInput.closest('.inputfile').find('.file-tooltip');
+    
         if (fileInput[0].files.length > 0) {
-          fileTooltip.text('File selected');
+            fileTooltip.text('File selected');
         } else {
-          fileTooltip.text('File not selected');
+            fileTooltip.text('File not selected');
         }
-      });
+    });
+
+
+    // inputfield additional ---------------- //
+    $(document).on('click', '.plus', function () {
+        var newInputfile = $('.inputfile:last').clone();
+        newInputfile.find('.file-input').val(''); 
+        newInputfile.find('.file-tooltip').text('File not selected'); 
+       
+        $('.inputfile').removeClass('additional');
+
+        newInputfile.addClass('additional');
+
+        $('.inputwrapper').append(newInputfile);
+    });
+
+    $(document).on('click', '.minus', function () {
+        if ($('.inputfile').length > 1) {
+            var index = $('.minus').index(this);
+            $('.inputfile').eq(index).remove();
+
+            $('.inputfile:not(:last)').removeClass('additional');
+
+            if ($('.inputfile').length > 1) {
+                $('.inputfile:last').addClass('additional');
+            }
+        }
+    });
 
 });
 
